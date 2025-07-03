@@ -1,5 +1,9 @@
 package main
 
+import (
+	"fmt"
+)
+
 /* func main() {
     // Variables
 
@@ -181,4 +185,70 @@ package main
 // 	return a + b, a * b
 // }
 
+// defined struct: not anonymous struct
+type Person struct {
+	Name string
+	Age int
+}
 
+func main() {
+	person := Person{Name: "John", Age: 25}
+	fmt.Printf("This is out person %+v\n", person)
+
+	// anonymous struct
+	employee := struct {
+		name string
+		id int
+	}{
+		name: "alice",
+		id: 123,
+	}
+	fmt.Printf("This is out employee %+v\n", employee)
+
+	// nested struct
+
+	type Address struct {
+		Street string
+		City string
+	}
+
+	type Contact struct {
+		Name string
+		Address Address
+		Phone string
+	}
+
+	contact := Contact{
+		Name: "Marc",
+		Address: Address{
+			Street: "123 Main street",
+			City: "Anytown",
+		},
+	}
+
+	fmt.Printf("This is out contact %+v\n", contact)
+	fmt.Println("name before: ", person.Name)
+	modifyPersonName(person)
+	fmt.Println("name after: ", person.Name)
+
+	fmt.Println("name before: ", person.Name)
+	modifyPointerPersonName(&person)
+	fmt.Println("name after: ", person.Name)
+
+	x := 20
+	ptr := &x
+	fmt.Printf("value of x: %d and address of x %p\n", x, ptr)
+	*ptr = 30
+	fmt.Printf("value of new x: %d and address of x %p\n", x, ptr)
+
+}
+
+func modifyPersonName(person Person){
+	person.Name = "Melkey"
+	fmt.Println("inside scope: new name", person.Name)
+}
+
+func modifyPointerPersonName(person *Person){
+	person.Name = "Melkey"
+	fmt.Println("inside scope: new name", person.Name)
+}
