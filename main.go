@@ -1,10 +1,6 @@
 package main
 
-import (
-	"fmt"
-)
-
-func main() {
+/* func main() {
     // Variables
 
     var name string = "Omar"
@@ -42,11 +38,11 @@ func main() {
 
     const pi = 3.14
 
-    const (    
+    const (
         Monday = 1
         Tuesday = 2
         Wednesday = 3
-    )      
+    )
 
     fmt.Printf("Monday: %d - Tuesday %d Wednesday %d\n", Monday, Tuesday, Wednesday)
 
@@ -74,12 +70,115 @@ func main() {
 
 		// sum, _ := calculateSumAndProduct(10, 10)
 		// fmt.Printf("this is sum: %d\n", sum)
-}
+} */
 
-func add (a int, b int) int {
-	return a + b
-}
+// func main() {
 
-func calculateSumAndProduct(a, b int) (int, int) {
-	return a + b, a * b
-}
+// 		/* loops */
+
+//     age:= 30
+
+//     if age >= 18 {
+//         fmt.Println("You are an adult")
+//     } else if age >= 13 {
+//         fmt.Println("You are a teenager")
+//     } else {
+//         fmt.Println("You are a child")
+//     }
+
+//     day := "Tuesday"
+
+//     switch day {
+//     case "Monday":
+// 			fmt.Println("start of the week")
+// 		case "Tuesday", "Wednesday", "Thursday":
+// 			fmt.Println("midweek")
+// 		case "Friday":
+// 			fmt.Println("TGIF (Thank God It's Friday)")
+// 		default:
+// 			fmt.Println("it's the weekend")
+//     }
+
+// 		for i:= 0; i < 5; i++ {
+// 			fmt.Println("This is i", i)
+// 		}
+
+// 		/* There are no while loops in go*/
+
+// 		counter := 0
+// 		for counter < 3 {
+// 			fmt.Println("This is the counter", counter)
+// 			counter++
+// 		}
+
+// 		/* arrays & slices */
+
+// 		numbers := [5]int{10,20,30,40,50}
+// 		fmt.Printf("this is length of the array %v\n", len(numbers))
+// 		fmt.Printf("this is out array %v\n", numbers)
+// 		fmt.Printf("this is index 1 %v\n", numbers[1])
+// 		numbers[1] = 90
+// 		fmt.Printf("this is index 1 %v\n", numbers[1])
+// 		fmt.Printf("this is last value %v\n", numbers[len(numbers)-1])
+
+// 		/* matrix 2 x 3 */
+
+// 		matrix := [2][3]int{
+// 			{1,2,3},
+// 			{4,5,6},
+// 		}
+// 		fmt.Printf("this is our matrix %v\n", matrix)
+
+// 		/* slices are dynamic arrays */
+// 		/* allNumbers := numbers[:]
+// 		firstThreee := numbers[0:3] */
+
+// 		fruits := []string{"apple", "banana", "strawberry"}
+// 		fmt.Printf("These are my fruits: %v", fruits)
+// 		fmt.Println()
+
+// 		fruits = append(fruits, "kiwi")
+// 		fmt.Printf("These are my fruits: %v", fruits)
+// 		fmt.Println()
+
+// 		moreFruits := []string{"blueberries", "pineapple"}
+// 		fruits = append(fruits, moreFruits...)
+// 		fmt.Printf("These are my fruits: %v", fruits)
+// 		fmt.Println()
+
+// 		for index, value := range numbers {
+// 			fmt.Printf("index: %d and value: %d", index, value)
+// 			fmt.Println()
+// 		}
+
+// 		capitalCities := map[string]string {
+// 			"Pakistan": "Islamabad",
+// 			"China": "Beijing",
+// 			"USA": "Washington DC" ,
+// 		}
+
+// 		fmt.Println(capitalCities["USA"])
+
+// 		capital, exists := capitalCities["Germany"]
+
+// 		if exists {
+// 			fmt.Println("this is the capital", capital)
+// 		} else {
+// 			fmt.Println("does not exist")
+// 		}
+
+// 		delete(capitalCities, "USA")
+// 		fmt.Printf("this is the updated map: %v\n", capitalCities)
+// }
+
+// /* functions */
+
+// func add (a int, b int) int {
+// 	return a + b
+// }
+
+// func calculateSumAndProduct(a, b int) (int, int) {
+// 	return a + b, a * b
+// }
+
+
